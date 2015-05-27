@@ -4,7 +4,7 @@ import codecs
 
 # Authentication
 acct = cloudant.Account(uri="http://raid.nedm1:5984")
-res = acct.login("nedm_user", "clu$terXz")
+res = acct.login(user, pw)
 assert res.status_code == 200
 
 # Grab the correct database
